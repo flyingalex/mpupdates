@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小程序相关更新</title>
+  <link rel="stylesheet" href="./assets/main.css">
+  </link>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <img src="./assets/images/icon64_wx_logo.png" />
+        <p>微信非官方小程序相关更新文档</p>
+        <div class="content-switch-btn">
+          <button class="api-btn active">API</button>
+          <button class="component-btn">Component</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div>
+      <h2>由于最近经常在做微信小程序相关的业务，每次这个功能是否可以做的时候都要去找微信是不是支持，另外有哪些新功能，可微信的文档有更新也不告诉你，随着文档越来越大，去逐个查阅是很费时间的，于是有了这个想法，
+        想把他们更新的功能按时间顺序记录下来
+      </h2>
+      <h2>做法:每天会去爬虫抓一下微信的文档，然后分析接口处的版本号来判断</h2>
+      <table class="api-table active">
+        <thead>
+          <tr>
+            <th>名称</th><th>功能说明</th><th>支持版本</th>
+          </tr>
+        </thead>
+        <tbody class="api-table-body">
+        </tbody>
+      </table>
+      <table class="component-table">
+        <thead>
+          <tr>
+            <th>名称</th><th>功能说明</th><th>支持版本</th>
+          </tr>
+        </thead>
+        <tbody class="component-table-body">
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="./assets/main.js"></script>
+</body>
+
+</html>

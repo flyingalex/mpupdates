@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header-wrapper img {
+    height: 30px;
+    margin-right: 5px;
+}
+.header-wrapper p {
+    flex-grow: 1;
+}
+h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+th {
+    position: relative;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 20px;
+    color: #888;
+}
+
+td {
+    position: relative;
+    color: #353535;
+    text-align: left;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    word-break: normal;
+}
+td:last-child {
+    padding-bottom: 20px;
+}
+
+table {
+    font-size: 14px;
+    display: none;
+    width: 100%;
+}
+table.active {
+    display: table;
+}
+table a {
+    color: #576b95;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+thead tr {
+    display: flex;
+}
+tbody tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #84dd44;
+    margin-bottom: 5px;
+}
+
+.content-switch-btn {
+    display: flex;
+}
+.content-switch-btn button {
+    cursor: pointer;
+    display: block;
+    padding: 0 2vw;
+    min-width: 24px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    margin: 0 8px;
+    transition: background .3s;
+}
+
+.content-switch-btn button:hover {
+    background-color: #f0f0f0;
+}
+.content-switch-btn button.active {
+    background-color: #07c160;
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    td::after,
+    th::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        transform: scaleY(.5);
+        background-color: #888;
+    }
+    td::after {
+        background-color: #e5e5e5;
+    }
+    td {
+        padding: 20px;
+    }
+
+    thead tr {
+        display: table-row;
+    }
+    tbody tr {
+        display: table-row;
+        border: 0;
+    }
+}
