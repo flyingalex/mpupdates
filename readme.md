@@ -20,6 +20,8 @@ parcel build
 ```
 
 3. 部署到netlify
+通过GitHub的action自动部署，
+部署文件在`.github/workflows/main.yml`
 
 
 ### **如果你知道新功能没被记录，欢迎提issue**
