@@ -24,7 +24,9 @@ parcel build
 部署文件在`.github/workflows/main.yml`
 
 
-### **如果你知道新功能没被记录，欢迎提issue**
+4. **缺点**
+因为是自动生成的，所以想手动添加的就没法做，后面再看看怎么添加
+### **欢迎提issue**
 
 ### License
 MIT
