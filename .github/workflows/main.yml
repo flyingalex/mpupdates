@@ -31,7 +31,7 @@ jobs:
     - name: publish to netlify
       uses: netlify/actions/cli@master
       with:
-        args: deploy --dir=build --prod
+        args: deploy --dir=public --prod
       env:
         NETLIFY_AUTH_TOKEN: 99912a397e5f123f23b663e1b134e380ef4adc340bdc46ba7c156b3e9e65ccc3
         NETLIFY_SITE_ID: f7e292c1-eb6d-4cb6-8612-d1833b512c3e
