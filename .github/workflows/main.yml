@@ -1,0 +1,39 @@
+name: CI
+
+on: 
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '0 1 * * *'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: generate data
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        python main.py
+        cd spider
+        scrapy crawl mpcomponent -o mpcomponent.json
+        scrapy crawl mpapi -o mpapi.json
+    - name: build frontend
+      run: |
+        npm install
+        npm run build
+    - name: publish to netlify
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --dir=build --prod
+      env:
+        NETLIFY_AUTH_TOKEN: 99912a397e5f123f23b663e1b134e380ef4adc340bdc46ba7c156b3e9e65ccc3
+        NETLIFY_SITE_ID: f7e292c1-eb6d-4cb6-8612-d1833b512c3e
+

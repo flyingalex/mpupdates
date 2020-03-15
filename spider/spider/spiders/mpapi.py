@@ -3,7 +3,7 @@ import scrapy
 
 
 class MpApi(scrapy.Spider):
-    name = 'mp_api'
+    name = 'mpapi'
     start_urls = ['https://developers.weixin.qq.com/miniprogram/dev/api/']
     # url = start_urls[0]
     def parse(self, response):
