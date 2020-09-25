@@ -3,6 +3,7 @@
 }
 body {
     margin: 0;
+    content-visibility: auto;
 }
 header {
     background-color: #f7f7f7;
