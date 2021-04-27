@@ -2,15 +2,15 @@
   "name": "mp-updates",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --out-dir public"
+    "build": "parcel build index.html --dist-dir public"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.0.0-beta.2"
   }
 }
