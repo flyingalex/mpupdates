@@ -23,7 +23,6 @@ parcel build
 通过GitHub的action自动部署，
 部署文件在`.github/workflows/main.yml`
 
-
 4. **缺点**
 因为是自动生成的，所以想手动添加的就没法做，后面再看看怎么添加
 ### **欢迎提issue**
