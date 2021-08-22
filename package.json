@@ -2,7 +2,6 @@
   "name": "mp-updates",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --dist-dir public"
@@ -11,6 +10,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.2"
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
   }
 }
