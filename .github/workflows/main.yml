@@ -24,6 +24,8 @@ jobs:
         cd spider
         scrapy crawl mpcomponent -o mpcomponent.json
         scrapy crawl mpapi -o mpapi.json
+        npm install
+        npm run build
     - name: publish to netlify
       uses: netlify/actions/cli@master
       with:
