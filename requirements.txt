@@ -1,1 +1,2 @@
 scrapy==2.6.0
+pyopenssl==22.0.0
