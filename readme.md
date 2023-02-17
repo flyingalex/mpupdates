@@ -29,5 +29,3 @@ parcel build
 
 ### License
 MIT
-
-
